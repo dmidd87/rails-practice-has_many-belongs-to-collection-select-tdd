@@ -1,0 +1,27 @@
+<div class="page-header">
+  <div class="pull-right">
+    <%= link_to "New Toy!", new_toy_path, class: "btn btn-info" %>
+  </div>
+  <h1>Toys!</h1>
+</div>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th> Toy Name </th>
+      <th> Cat </th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @toys.each do |toy| %>
+      <tr>
+        <td>
+          <%= link_to toy.name, toy_path(toy) %>
+        </td>
+        <td>
+          <em>Replace this with a link to the cat who owns this toy</em>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

@@ -1,0 +1,16 @@
+<%= form_for @toy do |f| %>
+
+  <div class="form-group">
+    <%= f.label :name %>
+    <%= f.text_field :name, class: "form-control" %>
+  </div>
+
+  <em>insert collection select for Cat</em>
+  <br>
+  <br>
+
+  <div class="form-group">
+    <%= f.submit class: "btn btn-primary" %>
+  </div>
+
+<% end %>
